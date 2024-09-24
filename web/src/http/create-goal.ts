@@ -13,8 +13,8 @@ export async function createGoal({
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      desiredWeeklyFrequency,
       title,
+      desiredWeeklyFrequency,
     }),
   });
 }

@@ -61,11 +61,12 @@ export async function getWeekSummary() {
 
   type GoalsPerDay = Record<
     string,
-    {
-      id: string;
-      title: string;
-      completedAt: string;
-    }[]
+    | {
+        id: string;
+        title: string;
+        completedAt: string;
+      }[]
+    | null
   >;
 
   const result = await db
